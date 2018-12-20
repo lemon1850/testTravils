@@ -18,7 +18,6 @@ before_install:
 - openssl aes-256-cbc -K $encrypted_83aac5fb7aae_key -iv $encrypted_83aac5fb7aae_iv
     -in id_rsa.enc -out ~/.ssh/id_rsa -d
 - chmod 600 ~/.ssh/id_rsa
-- echo -e "Host 45.76.29.35\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 
 env:
   global:
